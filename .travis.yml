@@ -12,5 +12,5 @@ deploy:
   - python manage.py migrate
   - heroku ps:scale web=1
   on: master
-  api_key: $HEROKU_AUTH_TOKEN
+  api_key: f88ed770-70ed-47fc-b40c-e0ce2977651c
  

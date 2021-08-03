@@ -20,7 +20,7 @@ click-repl==0.1.6
 colorama==0.4.3
 constantly==15.1.0
 contextlib2==0.6.0
-cryptography==3.0
+cryptography>3.0
 daphne==3.0.2
 defusedxml==0.7.1
 distlib==0.3.0

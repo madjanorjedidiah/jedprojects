@@ -6,7 +6,7 @@ install: python -m pip install -r requirements.txt
 script: python manage.py test --keepdb
 deploy:
   provider: heroku
-  app: projects
+  app: jedprojects
   run:
   - python manage.py makemigrations
   - python manage.py migrate

@@ -5,6 +5,7 @@ before_install:
 install: python -m pip install -r requirements.txt
 script: python manage.py test --keepdb
 deploy:
+  skip_cleanup: true
   provider: heroku
   app: jedprojects
   run:
@@ -12,5 +13,4 @@ deploy:
   - python manage.py migrate
   - heroku ps:scale web=1
   on: master
-  api_key: f88ed770-70ed-47fc-b40c-e0ce2977651c
- 
+  api_key: $HEROKU_AUTH_TOKEN
